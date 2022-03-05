@@ -1,0 +1,53 @@
+.head, .foot {
+    background-color: grey;
+    height: 10vh;
+}
+section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.content-c{
+    background-color: indianred;
+    height: 80vh;
+    width: 25vw;
+}
+.content-b{
+    background-color: blue;
+    height: 80vh;
+    width: 25vw;
+    order: -1;
+}
+.content-a{
+    background-color: green;
+    height: 80vh;
+    width: 50vw;
+}
+
+@media only screen and (min-width:321px) and (max-width:960px) {
+    section {
+        flex-wrap: wrap;
+    }
+    .content-a {
+        order:-1;
+        width: 100%;
+    }
+    .content-b, .content-c {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    section {
+        /* display: flex; */
+        flex-direction: column;
+    }
+    .content-a{
+        width: auto;
+        order: -1;
+    }
+    .content-b, .content-c {
+        width: auto;
+        height: 25vh;
+    }
+}

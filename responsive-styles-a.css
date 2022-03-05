@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    background: rosybrown;
+    height: 10vh;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+.content-a {
+    background: royalblue;
+    height: 40vh;
+    width: 70%;
+    float: left;
+}
+.content-b {
+    background-color: saddlebrown;
+    height: 40vh;
+    width: 70%;
+    float: left;
+}
+.content-c {
+    background-color: slategray;
+    width: 30%;
+    height: 80vh;
+    display: inline-block;
+}
+.footer {
+    background-color: springgreen;
+    height: 10vh;
+    width: auto;
+    margin-top: 5px;
+}
+
+@media only screen and (min-width:321px) and (max-width:768px){
+    .content-a, .content-b{
+        width: 51%;
+    }
+    .content-c {
+        width: 49%;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .content-a, .content-b, .content-c {
+        width: 100vw;
+        height: 26vh;
+    }
+}
